@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>計算機</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="calculator m-auto" id="app">
+    <div class="calculator__screen">
+      <p class="primary">{{templateBox}}</p>
+      <p class="calculator__screen__total white">{{total.toLocaleString('en-US')}}</p>
+    </div>
+    <div class="calculator__keyboard">
+      <p class="calculator__keyboard__item"
+        :class="{'bg-darken': (index + 1 ) % 4 == 0, 'radius': (index + 1 ) % 4 == 0}"
+        v-for="(key, index) in keys" :key="index"
+        @click="joinItems(key)">
+        {{key}}
+      </p>
+    
+      <p class="calculator__keyboard__item primary" @click="clearData">AC</p>
+      <p class="calculator__keyboard__item primary" @click="backSpace">⌫</p>
+      <p class="calculator__keyboard__item calculator__keyboard__item--equalBtn" @click="calculatorTotal">=</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

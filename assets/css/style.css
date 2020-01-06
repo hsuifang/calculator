@@ -1,0 +1,150 @@
+.primary {
+  color: #00C4FF;
+}
+
+.bg-primary {
+  background-color: #00C4FF;
+}
+
+.secondary {
+  color: #6C00FF;
+}
+
+.bg-secondary {
+  background-color: #6C00FF;
+}
+
+.dark {
+  color: #062145;
+}
+
+.bg-dark {
+  background-color: #062145;
+}
+
+.darken {
+  color: #041936;
+}
+
+.bg-darken {
+  background-color: #041936;
+}
+
+.white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.gray {
+  color: #E8E8E8;
+}
+
+.bg-gray {
+  background-color: #E8E8E8;
+}
+
+.radius {
+  border-radius: 16px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+body {
+  background: #E8E8E8;
+}
+
+.calculator {
+  width: 350px;
+  height: 525px;
+  background: #062145;
+  -webkit-box-shadow: 0px 20px 40px #00000066;
+          box-shadow: 0px 20px 40px #00000066;
+  border-radius: 20px;
+}
+
+.calculator__screen {
+  width: 100%;
+  height: 109px;
+  background: #041936;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 20px;
+  text-align: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calculator__screen__total {
+  font-size: 50px;
+  overflow-x: scroll;
+}
+
+.calculator__keyboard {
+  width: 100%;
+  height: calc(525px - 109px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px 10px;
+  font-weight: 200;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.calculator__keyboard__item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.calculator__keyboard__item:active {
+  background: #0a3774;
+  border-radius: 16px;
+}
+
+.calculator__keyboard__item--equalBtn {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-column-align: self-end;
+      justify-self: self-end;
+  background: -webkit-gradient(linear, left top, right top, from(#00C4FF), to(#6C00FF));
+  background: linear-gradient(90deg, #00C4FF, #6C00FF);
+  border-radius: 16px;
+}
+/*# sourceMappingURL=style.css.map */

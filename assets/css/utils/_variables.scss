@@ -1,0 +1,29 @@
+// variables
+$primary: #00C4FF;
+$secondary: #6C00FF;
+
+$dark: #062145;
+$darken: #041936;
+
+$white: #fff;
+$gray: #E8E8E8;
+
+$radius: 16px;
+// 
+$themes: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'dark': $dark,
+  'darken': $darken,
+  'white': $white,
+  'gray': $gray
+);
+
+@each $key, $value in $themes {
+  .#{$key} {
+    color: $value;
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
